@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="8vYNoTAqtTJI0EbXQBsp8J5MQGlszGGZnKeigfDKxBQ" />
@@ -1671,18 +1671,18 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form reveal">
+            <form class="contact-form reveal" action="https://formspree.io/f/mkoyjvpp" method="POST">
                 <div class="form-group">
                     <label>Your Name</label>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="your@email.com">
+                    <input type="email" name="email" placeholder="your@email.com" required>
                 </div>
                 <div class="form-group">
                     <label>Service Needed</label>
-                    <select>
+                    <select name="service" required>
                         <option value="" disabled selected>Select a service...</option>
                         <option>Graphic Design & Branding</option>
                         <option>Video Editing & Motion Graphics</option>
@@ -1694,10 +1694,12 @@
                 </div>
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea placeholder="Tell me about your project..."></textarea>
+                    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
                 </div>
-                <button class="form-submit">Send Message →</button>
-            </div>
+                <!-- 🔥 NO FORMSPREE THANK YOU PAGE -->
+                <input type="hidden" name="_redirect" value="https://muttaqiportfolio.github.io/thankyou.html">
+                <button type="submit" class="form-submit">Send Message →</button>
+            </form>
         </div>
     </section>
 
